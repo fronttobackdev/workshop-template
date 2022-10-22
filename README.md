@@ -70,3 +70,10 @@ npm run dev final/02
 
 If you run into any problems setting up or running any of the exercises, please
 [open an issue on GitHub](https://github.com/fronttobackdev/[REPO_NAME]/issues/new).
+
+## Credits
+
+This workshop template was inspired by similar workshop formats by
+[Ryan Florence](https://github.com/ryanflorence) and
+[Kent C. Dodds](https://github.com/kentcdodds). My format is heavily informed by
+my experience running workshops for [React Training](https://reacttraining.com).
