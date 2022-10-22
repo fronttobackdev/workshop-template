@@ -1,0 +1,204 @@
+:root {
+	--__reset__tab-size: 4;
+	--__reset__line-height: 1.5;
+	--__reset__font-family-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI,
+		Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont,
+		Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+		Noto Color Emoji;
+	--__reset__font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco,
+		Consolas, Liberation Mono, Courier New, monospace;
+
+	--__reset__color-placeholder: #9ca5b0;
+	--__reset__opacity-placeholder: 1;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	line-height: var(--__reset__line-height);
+	font-family: var(--__reset__font-family-sans);
+	-moz-tab-size: var(--__reset__tab-size);
+	-o-tab-size: var(--__reset__tab-size);
+	tab-size: var(--__reset__tab-size);
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+hr {
+	background: 0;
+	border-top-width: 1px;
+	color: inherit;
+	height: 0;
+	border-color: currentColor;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font: inherit;
+	overflow-wrap: break-word;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: var(--__reset__font-family-mono);
+	font-size: 1em;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+table {
+	border-collapse: collapse;
+	border-color: inherit;
+	text-indent: 0;
+}
+
+/* completely reset form elements */
+button,
+input,
+optgroup,
+select,
+textarea {
+	-webkit-appearance: none;
+	appearance: none;
+	vertical-align: middle;
+	color: inherit;
+	font: inherit;
+	background: transparent;
+	border-radius: 0;
+	line-height: inherit;
+	text-align: inherit;
+	text-transform: inherit;
+}
+
+/* restore appearance for some input elements */
+[type="checkbox"] {
+	-webkit-appearance: checkbox;
+	appearance: checkbox;
+}
+
+[type="radio"] {
+	-webkit-appearance: radio;
+	appearance: radio;
+}
+
+:-moz-focusring {
+	outline: auto;
+}
+
+:-moz-ui-invalid {
+	box-shadow: none;
+}
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+details {
+	display: block;
+}
+
+summary {
+	display: list-item;
+}
+
+menu,
+ol,
+ul {
+	list-style: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: var(--__reset__color-placeholder);
+	opacity: var(--__reset__opacity-placeholder);
+}
+
+:disabled {
+	cursor: default;
+}
+
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+	display: block;
+	vertical-align: middle;
+}
+
+canvas,
+img,
+picture,
+svg,
+video {
+	height: auto;
+	max-width: 100%;
+}
+
+[hidden] {
+	display: none;
+}

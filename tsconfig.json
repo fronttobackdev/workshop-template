@@ -1,0 +1,17 @@
+{
+	"files": [],
+	"exclude": ["node_modules"],
+	"references": [
+		{ "path": "scripts" }
+
+		// Add references here as you add lessons
+		// { "path": "exercise/01-lesson" },
+		// { "path": "final/01-lesson" },
+		// { "path": "exercise/02-lesson" },
+		// { "path": "final/02-lesson" },
+		// { "path": "exercise/03-lesson" },
+		// { "path": "final/03-lesson" }
+		// { "path": "exercise/04-lesson" },
+		// { "path": "final/04-lesson" }
+	]
+}

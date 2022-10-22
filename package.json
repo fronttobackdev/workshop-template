@@ -1,0 +1,41 @@
+{
+	"name": "REPO_NAME",
+	"description": "WORKSHOP_SHORT_DESCRIPTION",
+	"private": true,
+	"version": "0.1.0",
+	"author": "Chance Strickland <hi@chance.dev> (https://chance.dev)",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/fronttobackdev/[REPO_NAME].git"
+	},
+	"bugs": {
+		"url": "https://github.com/fronttobackdev/[REPO_NAME]/issues"
+	},
+	"scripts": {
+		"setup": "npm i && npm run setup --workspaces --if-present && npm run build",
+		"dev": "node ./scripts/dev",
+		"ts:off": "node ./scripts/ts-off",
+		"ts:on": "node ./scripts/ts-on",
+		"build": "npm run build --workspaces --if-present",
+		"test": "npm run test --workspaces --if-present",
+		"format": "prettier --write '**/*.{md,js,jsx,ts,tsx,json}'"
+	},
+	"devDependencies": {
+		"@types/node": "^18.11.3",
+		"@typescript-eslint/eslint-plugin": "^5.40.1",
+		"@typescript-eslint/parser": "^5.40.1",
+		"cross-spawn": "^7.0.3",
+		"eslint": "^8.26.0",
+		"eslint-config-chance": "^2.0.2",
+		"eslint-import-resolver-node": "0.3.6",
+		"eslint-import-resolver-typescript": "^3.5.2",
+		"eslint-plugin-import": "^2.26.0",
+		"prettier": "^2.7.1",
+		"typescript": "^4.8.4"
+	},
+	"workspaces": [
+		"exercise/*",
+		"final/*"
+	]
+}

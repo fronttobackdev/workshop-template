@@ -1,0 +1,12 @@
+{
+	"extends": "../../tsconfig-base.json",
+	"include": ["**/*"],
+	"compilerOptions": {
+		"typeRoots": [
+			"@types",
+			"node_modules/@types",
+			"../../@types",
+			"../../node_modules/@types"
+		]
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"noEmit": true,
+		"strict": false,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"module": "ES2022",
+		"moduleResolution": "node",
+		"target": "ES2022",
+		"jsx": "react",
+		"typeRoots": ["@types", "node_modules/@types"]
+	}
+}
