@@ -1,8 +1,6 @@
 import path from "node:path";
 import { pathExists, resolveAppPath } from "./utils.js";
-import { createRequire } from "node:module";
-const require = createRequire(import.meta.url);
-const spawn = require("cross-spawn");
+import spawn from "cross-spawn";
 
 main(process.argv.slice(2));
 
