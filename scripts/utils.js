@@ -108,7 +108,7 @@ export async function getAppPaths() {
  */
 export async function resolveAppPath(pathStart) {
 	return (await getAppPaths()).find((dir) =>
-		path.resolve(dir).startsWith(path.resolve(pathStart))
+		path.resolve(dir).startsWith(path.resolve(pathStart)),
 	);
 }
 

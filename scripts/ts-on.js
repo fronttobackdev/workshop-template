@@ -11,7 +11,7 @@ async function main() {
 	let appPaths = await getAppPaths();
 	let fileContents = await fs.promises.readFile(
 		path.join(MODULE_PATH, "tsconfig-template.json"),
-		"utf8"
+		"utf8",
 	);
 	for (let appPath of appPaths) {
 		let filePath = path.resolve(appPath, "tsconfig.json");
